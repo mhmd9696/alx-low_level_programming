@@ -1,14 +1,19 @@
-#include <stdlib.h>
 #include "main.h"
 
 /**
-*
-* _putchar
-*
-* return: on success
-*
-*/
-int _putchar(char c)
+ * main - function to print
+ *
+ * Return: 0
+ */
+int main(void)
 {
-	return (writre(1, &c, 1));
+	char str[] = {_putchar};
+	int ch;
+
+	for (c = 0; ch < 8; c++)
+	{
+		_putchar(str[ch]);
+	}
+_putchar('\n');
+return (0);
 }
