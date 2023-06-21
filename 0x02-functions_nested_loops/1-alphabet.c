@@ -1,4 +1,4 @@
-#include "main.h"
+#include"main.h"
 /**
  * print_alphabet - function to print abc
  *
@@ -10,5 +10,5 @@ void print_alphabet(void)
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 		_putchar(ch);
-_putchar('\n');
+	_putchar('\n');
 }}
