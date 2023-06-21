@@ -1,18 +1,20 @@
-#include "main.h"
+#include "holberton.h"
 /**
  * print_last_digit - function that computes the absolute value of an integer
- * @n:  is the int that will use for the argument of the function
- * Return: lastDigit
+ * @c:  is the int that will use for the argument of the function
+ * Return: 0
  */
-int print_last_digit(int n)
-
-	int lastDigit;
+int print_last_digit(int c)
 {
-	if (n < 0)
-	lastDigit = -1 * (n % 10);
+	if (c > 0 || c == 0)
+	{
+	_putchar (c % 10 + '0');
+	return (c % 10);
+	}
 	else
-	lastDigit = n % 10;
-
-	_putchar(last Digit + '0');
-	return (lastDigit);
+	{
+	c = c * -1;
+	_putchar (c % 10 + '0');
+	return (c % 10);
+	}
 }
